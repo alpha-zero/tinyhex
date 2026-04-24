@@ -1,0 +1,20 @@
+# main ignoring files for production. not important for webhosting.
+*.psd
+*.ai
+*.db
+*.clip
+*.afdesign.*
+*.afphoto
+*.af
+# other marked files
+*~lock~
+*.private
+*_donotinclude
+
+# ignore old files
+*.old.*
+*_old
+
+# ignore lab
+*_lab
+*.lab.*
