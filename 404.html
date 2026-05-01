@@ -18,25 +18,29 @@
                 margin: 0; padding: 0;
                 display:flex;
                 flex-direction: column;
-                justify-content: start;
+                justify-content: center;
                 align-items: center;
                 height: 100vh;
                 
                 background-image: url("404.webp");
                 background-size:cover;  
                 background-position: center;
+                background-color: white;
                 
-                font-family:Georgia, 'Times New Roman', serif;;
+                font-family:Georgia, 'Times New Roman', serif;
             }
             a:any-link {color: black;}
             a {
                 text-decoration: none;
                 padding: .5em; margin: 1em;
                 background-color: #ffd33b;
-                transition: transform .5s ease-in-out;
             }
             a:focus, a:hover {
-                transform:translateY(.5em);
+                transform:scale(2);
+            }
+            body:has(a:focus), body:has(a:hover) {
+                backdrop-filter: invert(100);
+                background-color: #002BC5;
             }
         </style>
     </head>
